@@ -6,6 +6,7 @@ Created on Sun Apr  5 15:19:55 2020
 """
 # Beautiful Soup and the Python website scraping - IMDB Top 250 Movies
 
+# import unittest
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
@@ -60,7 +61,10 @@ def main():
                     'Starring':actors_list})
     # print(df)
 
-    df.to_csv('CA1MartinaLehkecc.csv', index=False, encoding='utf-8')
+    df.to_csv('CA1MartinaLehkec.csv', index=False, encoding='utf-8')
     
 main()
     
+
+# if __name__ == '__main__':
+#     unittest.main()
